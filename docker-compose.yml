@@ -1,0 +1,10 @@
+services:
+  weather-svc:
+    image: bazucas/weather-svc:latest
+    build: 
+      context: .
+      dockerfile: src/API/VL.Taskio.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 10001:80
