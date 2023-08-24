@@ -7,41 +7,38 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E238E306-53C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{4A33B83F-7736-498D-846B-491AA1D99ED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.Api", "src\API\VL.Taskio.Api\VL.Taskio.Api.csproj", "{D3BE56E5-C00F-4009-A916-6AACE74DD003}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B676372F-38C7-4331-97EE-4B01176084B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.Application", "src\Core\VL.Taskio.Application\VL.Taskio.Application.csproj", "{61EF0489-7580-4CE8-A488-ED656FCBAECF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.Application", "src\Core\VL.Taskio.Application\VL.Taskio.Application.csproj", "{61EF0489-7580-4CE8-A488-ED656FCBAECF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.Domain", "src\Core\VL.Taskio.Domain\VL.Taskio.Domain.csproj", "{1CADD187-FF03-470C-B354-3F5CDF5DAB8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.Domain", "src\Core\VL.Taskio.Domain\VL.Taskio.Domain.csproj", "{1CADD187-FF03-470C-B354-3F5CDF5DAB8A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DC84FBEC-8296-4B72-BDE8-47AD7644AB38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.Identity", "src\Infrastructure\VL.Taskio.Identity\VL.Taskio.Identity.csproj", "{056DB3C9-F08B-4496-9623-F6DF40A70877}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.Identity", "src\Infrastructure\VL.Taskio.Identity\VL.Taskio.Identity.csproj", "{056DB3C9-F08B-4496-9623-F6DF40A70877}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.Infrastructure", "src\Infrastructure\VL.Taskio.Infrastructure\VL.Taskio.Infrastructure.csproj", "{23FB757F-D089-4CCF-8742-DBE1193C82EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.Infrastructure", "src\Infrastructure\VL.Taskio.Infrastructure\VL.Taskio.Infrastructure.csproj", "{23FB757F-D089-4CCF-8742-DBE1193C82EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.Persistence", "src\Infrastructure\VL.Taskio.Persistence\VL.Taskio.Persistence.csproj", "{EAEF2816-44F8-450C-AA5C-0EC8BBC00067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.Persistence", "src\Infrastructure\VL.Taskio.Persistence\VL.Taskio.Persistence.csproj", "{EAEF2816-44F8-450C-AA5C-0EC8BBC00067}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{09D62B50-CA7D-43C4-A3E8-AF200E699C6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.Persistence.IntegrationTests", "tests\VL.Taskio.Persistence.IntegrationTests\VL.Taskio.Persistence.IntegrationTests.csproj", "{58B03294-8D6A-4483-83A1-882E639EDFA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.Persistence.IntegrationTests", "tests\VL.Taskio.Persistence.IntegrationTests\VL.Taskio.Persistence.IntegrationTests.csproj", "{58B03294-8D6A-4483-83A1-882E639EDFA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.Application.UnitTests", "tests\VL.Taskio.Application.UnitTests\VL.Taskio.Application.UnitTests.csproj", "{0692EE7A-0A41-493B-9611-A7ED45014447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.Application.UnitTests", "tests\VL.Taskio.Application.UnitTests\VL.Taskio.Application.UnitTests.csproj", "{0692EE7A-0A41-493B-9611-A7ED45014447}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.GatewayService", "src\API\VL.Taskio.GatewayService\VL.Taskio.GatewayService.csproj", "{CAA8C4AE-8FCE-47FD-9A88-85CB8002331D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VL.Taskio.TaskService", "src\API\VL.Taskio.TaskService\VL.Taskio.TaskService.csproj", "{9772E299-599D-4FDB-A107-2778FF63934C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Taskio.IdentityService", "src\API\VL.Taskio.IdentityService\VL.Taskio.IdentityService.csproj", "{C284ED2E-77CC-4773-8AF1-0FA44298DC67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3BE56E5-C00F-4009-A916-6AACE74DD003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3BE56E5-C00F-4009-A916-6AACE74DD003}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3BE56E5-C00F-4009-A916-6AACE74DD003}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3BE56E5-C00F-4009-A916-6AACE74DD003}.Release|Any CPU.Build.0 = Release|Any CPU
 		{61EF0489-7580-4CE8-A488-ED656FCBAECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{61EF0489-7580-4CE8-A488-ED656FCBAECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61EF0489-7580-4CE8-A488-ED656FCBAECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -70,10 +67,24 @@ Global
 		{0692EE7A-0A41-493B-9611-A7ED45014447}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0692EE7A-0A41-493B-9611-A7ED45014447}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0692EE7A-0A41-493B-9611-A7ED45014447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA8C4AE-8FCE-47FD-9A88-85CB8002331D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA8C4AE-8FCE-47FD-9A88-85CB8002331D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA8C4AE-8FCE-47FD-9A88-85CB8002331D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA8C4AE-8FCE-47FD-9A88-85CB8002331D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9772E299-599D-4FDB-A107-2778FF63934C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9772E299-599D-4FDB-A107-2778FF63934C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9772E299-599D-4FDB-A107-2778FF63934C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9772E299-599D-4FDB-A107-2778FF63934C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C284ED2E-77CC-4773-8AF1-0FA44298DC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C284ED2E-77CC-4773-8AF1-0FA44298DC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C284ED2E-77CC-4773-8AF1-0FA44298DC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C284ED2E-77CC-4773-8AF1-0FA44298DC67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4A33B83F-7736-498D-846B-491AA1D99ED8} = {E238E306-53C8-4F9C-820F-803708C44323}
-		{D3BE56E5-C00F-4009-A916-6AACE74DD003} = {4A33B83F-7736-498D-846B-491AA1D99ED8}
 		{B676372F-38C7-4331-97EE-4B01176084B6} = {E238E306-53C8-4F9C-820F-803708C44323}
 		{61EF0489-7580-4CE8-A488-ED656FCBAECF} = {B676372F-38C7-4331-97EE-4B01176084B6}
 		{1CADD187-FF03-470C-B354-3F5CDF5DAB8A} = {B676372F-38C7-4331-97EE-4B01176084B6}
@@ -83,5 +94,11 @@ Global
 		{EAEF2816-44F8-450C-AA5C-0EC8BBC00067} = {DC84FBEC-8296-4B72-BDE8-47AD7644AB38}
 		{58B03294-8D6A-4483-83A1-882E639EDFA3} = {09D62B50-CA7D-43C4-A3E8-AF200E699C6E}
 		{0692EE7A-0A41-493B-9611-A7ED45014447} = {09D62B50-CA7D-43C4-A3E8-AF200E699C6E}
+		{CAA8C4AE-8FCE-47FD-9A88-85CB8002331D} = {4A33B83F-7736-498D-846B-491AA1D99ED8}
+		{9772E299-599D-4FDB-A107-2778FF63934C} = {4A33B83F-7736-498D-846B-491AA1D99ED8}
+		{C284ED2E-77CC-4773-8AF1-0FA44298DC67} = {4A33B83F-7736-498D-846B-491AA1D99ED8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4691EB1-663A-424C-9B76-336A308B2FE2}
 	EndGlobalSection
 EndGlobal
