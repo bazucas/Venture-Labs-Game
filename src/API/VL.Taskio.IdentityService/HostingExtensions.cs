@@ -1,9 +1,11 @@
+using Duende.IdentityServer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using VL.Taskio.IdentityService.Data;
 using VL.Taskio.IdentityService.Models;
 using VL.Taskio.IdentityService.Services;
+using VL.Taskio.TaskService.Middleware;
 
 namespace VL.Taskio.IdentityService;
 
@@ -47,23 +49,25 @@ internal static class HostingExtensions
             options.Cookie.SameSite = SameSiteMode.Lax;
         });
 
-        builder.Services.AddAuthentication();
-        // .AddGoogle(options =>
-        // {
-        //     options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+        builder.Services.AddAuthentication()
+         .AddGoogle(options =>
+         {
+             options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
 
-        //     // register your IdentityServer with Google at https://console.developers.google.com
-        //     // enable the Google+ API
-        //     // set the redirect URI to https://localhost:5001/signin-google
-        //     options.ClientId = "copy client ID from Google here";
-        //     options.ClientSecret = "copy client secret from Google here";
-        // });
+             // register your IdentityServer with Google at https://console.developers.google.com
+             // enable the Google+ API
+             // set the redirect URI to https://localhost:5001/signin-google
+             options.ClientId = "copy client ID from Google here";
+             options.ClientSecret = "copy client secret from Google here";
+         });
 
         return builder.Build();
     }
 
     public static WebApplication ConfigurePipeline(this WebApplication app)
     {
+        app.UseMiddleware<ExceptionMiddleware>();
+
         app.UseSerilogRequestLogging();
 
         if (app.Environment.IsDevelopment())
