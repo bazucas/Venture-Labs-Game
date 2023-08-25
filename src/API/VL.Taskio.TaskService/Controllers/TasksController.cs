@@ -1,19 +1,19 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace VL.Taskio.TaskService.Controllers;
 
-[ApiController]
 [Route("api/[controller]")]
-public class WeatherForecastController : ControllerBase
+[ApiController]
+public class TasksController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
     {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly ILogger<TasksController> _logger;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public TasksController(ILogger<TasksController> logger)
     {
         _logger = logger;
     }
@@ -27,6 +27,6 @@ public class WeatherForecastController : ControllerBase
             TemperatureC = Random.Shared.Next(-20, 55),
             Summary = Summaries[Random.Shared.Next(Summaries.Length)]
         })
-        .ToArray();
+            .ToArray();
     }
 }
