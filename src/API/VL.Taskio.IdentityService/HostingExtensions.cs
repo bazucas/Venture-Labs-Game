@@ -5,7 +5,6 @@ using Serilog;
 using VL.Taskio.IdentityService.Data;
 using VL.Taskio.IdentityService.Models;
 using VL.Taskio.IdentityService.Services;
-using VL.Taskio.TaskService.Middleware;
 
 namespace VL.Taskio.IdentityService;
 
@@ -66,8 +65,6 @@ internal static class HostingExtensions
 
     public static WebApplication ConfigurePipeline(this WebApplication app)
     {
-        app.UseMiddleware<ExceptionMiddleware>();
-
         app.UseSerilogRequestLogging();
 
         if (app.Environment.IsDevelopment())

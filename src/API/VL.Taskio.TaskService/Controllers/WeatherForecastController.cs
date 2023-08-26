@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using VL.Taskio.TaskService.Models;
 
 namespace VL.Taskio.TaskService.Controllers;
 

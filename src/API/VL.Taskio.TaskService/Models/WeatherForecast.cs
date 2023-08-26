@@ -1,4 +1,4 @@
-namespace VL.Taskio.TaskService;
+namespace VL.Taskio.TaskService.Models;
 
 public class WeatherForecast
 {
