@@ -10,9 +10,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Host.UseSerilog((context, loggerConfig) => loggerConfig
-    .WriteTo.Console()
-    .ReadFrom.Configuration(context.Configuration));
+builder.Host.UseSerilog((context, config) =>
+    config.ReadFrom.Configuration(context.Configuration));
+Serilog.Debugging.SelfLog.Enable(Console.Error);
 
 //builder.Services.AddApplicationServices();
 //builder.Services.AddInfrastructureServices(builder.Configuration);
@@ -39,14 +39,14 @@ var app = builder.Build();
 
 app.UseMiddleware<ExceptionMiddleware>();
 
-app.UseSerilogRequestLogging();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 
