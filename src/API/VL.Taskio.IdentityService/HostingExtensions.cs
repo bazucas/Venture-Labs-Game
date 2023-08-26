@@ -14,6 +14,10 @@ internal static class HostingExtensions
     {
         builder.Services.AddRazorPages();
 
+        builder.Host.UseSerilog((context, loggerConfig) => loggerConfig
+            .WriteTo.Console()
+            .ReadFrom.Configuration(context.Configuration));
+
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
